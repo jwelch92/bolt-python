@@ -324,7 +324,9 @@ class AsyncOAuthFlow:
             return Installation(
                 app_id=oauth_response.get("app_id"),
                 enterprise_id=installed_enterprise.get("id"),
+                enterprise_name=installed_enterprise.get("name"),
                 team_id=installed_team.get("id"),
+                team_name=installed_team.get("name"),
                 bot_token=bot_token,
                 bot_id=bot_id,
                 bot_user_id=oauth_response.get("bot_user_id"),
